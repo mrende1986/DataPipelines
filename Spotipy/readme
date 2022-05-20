@@ -1,0 +1,1 @@
+This is a really fun pipeline I build to analysis the length of albumns on Spotify. The Spotipy package helps to extra data. In this pipeline I pull many different artits from a playlist, find all their albums and put togehter the album length.
