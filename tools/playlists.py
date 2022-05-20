@@ -4,11 +4,11 @@ import spotipy.util as util
 from json.decoder import JSONDecodeError
 
 # Get the user name from terminal
-username = '1212751427'
+username = 'hidden'
 scope = 'playlist-read-private'
 ## You can find other scopes here: https://developer.spotify.com/documentation/general/guides/scopes/
-client_id = '119db8d44103402287fddef889bc119f'
-client_secret = '62c77206249c4daabf284674dd07186f'
+client_id = 'hidden'
+client_secret = 'hidden'
 redirect_uri = 'https://www.google.com/callback/'
 
 # Erase cache and prompt for user permission
