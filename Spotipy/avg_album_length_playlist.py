@@ -38,6 +38,7 @@ def gather_data():
         
         # Calling a function I created in the tools folder that finds the artist of every
         # song in the playlist input. In this case the playlist is best_blues_2021
+        # spotify_playlists looks up the playlist uri. The code can be found in the config folder.
         artists = get_artists_from_playlist(spotify_playlists()[PLAYLIST])
         for artist in artists.keys():
             artists_albums = spotifyObject.artist_albums(artist, album_type='album', limit=50)
