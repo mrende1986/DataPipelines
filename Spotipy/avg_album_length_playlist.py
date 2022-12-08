@@ -2,6 +2,8 @@ import os
 import csv
 import spotipy
 import spotipy.util as util
+import boto3
+import configparser
 
 from config.playlists import spotify_playlists
 from tools.playlists import get_artists_from_playlist
@@ -60,3 +62,17 @@ def gather_data():
 
 
 gather_data()
+local_filename = 'best_blues_2021.csv'
+
+# load the aws_boto_credentials values
+parser = configparser.ConfigParser()
+parser.read("pipeline.conf")
+access_key = parser.get("aws_boto_credentials", "access_key")
+secret_key = parser.get("aws_boto_credentials", "secret_key")
+bucket_name = parser.get("aws_boto_credentials", "bucket_name")
+
+s3 = boto3.client('s3', aws_access_key_id=access_key, aws_secret_access_key=secret_key)
+
+s3_file = local_filename
+
+s3.upload_file(local_filename, bucket_name, s3_file)
