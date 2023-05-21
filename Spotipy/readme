@@ -1,5 +1,10 @@
-This is a really fun pipeline I build to analysis the length of albumns on Spotify. 
+Description:
 
-The Spotipy package helps to extra data. 
+In this pipeline, I query data on spotify artits and find all their albums and put togehter an analysis on the album length.
+The raw data is export to csv and loaded into an S3 bucket. From here the data is ready to be consumed by the data warehouse. 
+The data is loaded into Tableau and visualizations are updated. 
 
-In this pipeline I pull many different artits from a playlist, find all their albums and put togehter the album length.
+Python packages used:
+Spotipy
+
+Tableau link: https://public.tableau.com/app/profile/matthew.rende/viz/SpotifyBluesAnalysis/Dashboard1
