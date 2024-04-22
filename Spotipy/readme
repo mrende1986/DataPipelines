@@ -1,6 +1,6 @@
 Description:
 
-In this pipeline, I query data on spotify artits and find all their albums and put togehter an analysis on the album length.
+In this pipeline, I query data on spotify artists and find all their albums and put together an analysis on album lengths. I'm trying to find out if albums are getting longer or shorter. 
 The raw data is export to csv and loaded into an S3 bucket. From here the data is ready to be consumed by the data warehouse. 
 The data is loaded into Tableau and visualizations are updated. 
 
