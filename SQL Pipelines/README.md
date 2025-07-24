@@ -1,0 +1,1 @@
+These are homework assignments from the Data Expert data engineer bootcamp: https://learn.dataexpert.io
